@@ -1,0 +1,11 @@
+{
+    "server":{
+        "port": "6969"
+    },
+    "vault":{
+        "token":"vault-token",
+        "port": "8200",
+        "protocol": "http",
+        "url": "127.0.0.1"
+    }
+}
