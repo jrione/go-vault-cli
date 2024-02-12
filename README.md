@@ -12,12 +12,12 @@ go build
 ```
 #### Format Command
 ```
-./go-vault-cli [flags] [cmd] // you can also see this in help command
+./go-vault-cli [flags] [cmd] # you can also see this in help command
 ```
 
 #### Help Command
 ```bash
-./go-vault-cli -help // for help
+./go-vault-cli -help # for help
 ```
 
 #### write secret to Vault
