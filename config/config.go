@@ -24,6 +24,13 @@ type Config struct {
 	} `json:"vault"`
 }
 
+var (
+	filename string
+	help     string
+	APP_NAME string
+	BRANCH   string
+)
+
 var Env *Config
 
 func LoadConfig() {
@@ -42,7 +49,7 @@ func LoadConfig() {
 
 func LoadExternalEnv() {
 	os.Clearenv()
-	godotenv.Load(".env")
+	godotenv.Load(filename)
 
 }
 
@@ -56,13 +63,6 @@ func GetExternalEnv() map[string]any {
 	}
 	return newEnv
 }
-
-var (
-	filename string
-	help     string
-	APP_NAME string
-	BRANCH   string
-)
 
 func RunFlag() {
 	flag.StringVar(&filename, "file", "", "File location want to save")
